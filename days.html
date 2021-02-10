@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body ng-app="">
+
+Select day of week :
+<select ng-model="myVar">
+  <option value="Sunday">Sunday
+  <option value="Monday">Monday
+  <option value="Tuesday">Tuesday
+  <option value="Wednesday">Wednesday
+  <option value="Thursday">Thursday
+  <option value="Friday">Friday
+  <option value="Saturday">Saturday
+</select>
+
+<hr>
+<div ng-switch="myVar">
+  <div ng-switch-when="Sunday">
+     <h1>Sunday</h1>
+     <p>wishing you a beautiful Sunday </p>
+  </div>
+  <div ng-switch-when="Monday">
+     <h1>Monday</h1>
+     <p>wishing you a beautiful Monday </p>
+  </div>
+  <div ng-switch-when="Tuesday">
+     <h1>Tuesday</h1>
+     <p>wishing you a beautiful Tuesday </p>
+  </div>
+  <div ng-switch-when="Wednesday">
+    <h1>Wednesday</h1>
+    <p>wishing you a beautiful Wednesday </p>
+ </div>
+ <div ng-switch-when="Thursday">
+    <h1>Thursday</h1>
+    <p>wishing you a beautiful Thursday </p>
+ </div>
+ <div ng-switch-when="Friday">
+    <h1>Friday</h1>
+    <p>wishing you a beautiful Friday </p>
+ </div>
+ <div ng-switch-when="Saturday">
+    <h1>Saturday</h1>
+    <p>wishing you a beautiful Saturday </p>
+ </div>
+  <div ng-switch-default>
+     <h1>Switch</h1>
+     <p>Select topic from the dropdown, to switch the content of this DIV.</p>
+
+</div>
+<hr>
+
+</body>
+</html>
